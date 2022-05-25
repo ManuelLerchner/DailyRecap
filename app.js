@@ -21,7 +21,7 @@ screenshot.listDisplays().then((displays) => {
     }
 
     displays.forEach((display, idx) => {
-        const imagePath = path.join(imageDir, date.format("HH-MM-ss") + "_DISPLAY" + idx + ".png");
+        const imagePath = path.join(imageDir, date.format("hh-mm-ss") + "_DISPLAY" + idx + ".png");
 
         screenshot({
             screen: display.id,
